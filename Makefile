@@ -12,4 +12,8 @@ lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 
 
-all: install lint test format #deploy
+
+deploy:
+	#deploy goes here
+		
+all: install lint test format deploy
