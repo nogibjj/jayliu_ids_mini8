@@ -1,3 +1,4 @@
+from main import add
 def test_add():
     """testing out add function"""
     assert add(2,2)==4
