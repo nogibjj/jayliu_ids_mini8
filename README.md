@@ -1,3 +1,4 @@
+[![CI/CD](https://github.com/nogibjj/jayliu_ids_mini8/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/jayliu_ids_mini8/actions/workflows/ci.yml)
 # JAYLIU_IDS_MINI8 - Python to Rust Data Processing Project
 
 This project involves rewriting a Python data processing script in Rust to highlight improvements in speed and resource usage.
