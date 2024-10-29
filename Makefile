@@ -1,19 +1,18 @@
-install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+# Python commands
+setup_python:
+	pip install -r python_script/requirements.txt
 
-test:
-	python -m pytest -vv --cov=main --cov=mylib test_*.py 
+run_python:
+	python python_script/main.py
 
-format:	
-	black *.py 
+# Rust commands
+setup_rust:
+	cd rust_script && cargo build
 
-lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
+run_rust:
+	cd rust_script && cargo run --release
 
-
-
-deploy:
-	#deploy goes here
-		
-all: install lint test format deploy
+# Benchmarking commands
+benchmark:
+	time make run_python
+	time make run_rust
